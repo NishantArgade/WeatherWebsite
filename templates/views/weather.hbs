@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	{{>headerLinks}}
+	<title>WeatherWebsite</title>
+</head>
+
+<body>
+
+	{{!--
+	<!-- --------- navbar --------- --> --}}
+	{{>navbar}}
+	{{!--
+	<!-- --------- mainContaint --------- --> --}}
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-12 mx-auto">
+				<div class="mainWeatherContainer">
+					<div class="form searchForm input-group mb-3 mt-5">
+						<input type="text" class="searchText" placeholder="Write city name">
+						<input class="searchBtn text-center" type="submit" name="Search" value="Search">
+					</div>
+
+					<div class="searchBox text-center mt-5">
+						<div class="card">
+							<div class="card-head inpCardHead">
+								<div class="day ">Tushday</div>
+								<div class="date">13 Oct</div>
+							</div>
+							<div class="min-max-temp">
+								<span class="cityName" style="color:white;"></span>
+								<span class="countryName" style="color:white;"></span>
+							</div>
+							<div class="card-body px-5">
+								<div class="cardText">Get Output Here</div>
+								<div class="weatherIcon" style="display:inline-block"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	{{!--
+	<!-- ---------- Footer ------------- --> --}}
+	{{>footer}}
+	{{!--
+	<!-- Optional JavaScript --> --}}
+	{{>jvScript}}
+
+</body>
+
+</html>

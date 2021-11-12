@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&family=Quicksand:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Piazzolla', serif;
+
+}
+:root{
+	--main-bg:rgb(31, 179, 238);
+	--main-color:green;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}	
+/* ******************** navbar ******************************************************************* */
+.spiner{
+	color:var(--main-bg);
+	margin: 10px;
+	transition: all;
+	animation: rotate 2s linear infinite ;
+}	
+@keyframes rotate {
+	0%{
+		transform: rotate(0deg)
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+/* ------- mainDivs ------------- */
+
+/* left div */
+.left-div{
+	margin-top: 8rem;
+}
+.left-div p{
+	font-size: 1rem;
+}	
+.left-div h1{
+	font-size: 1.4rem;
+}
+.weatherPara{
+	font-weight: 200;
+}
+.weatherHeading{
+	font-size: 3rem;
+	font-weight: 800;
+}	
+.checkBtn{
+	/* width: 6rem; */
+	font-size: 1rem;
+	border-radius: 25px;
+	margin-top: 20px;
+	box-shadow: 0 3px 2px 1px gray;
+	transition: all 0.3s;
+	text-transform: capitalize;
+}	
+.checkBtn:hover{
+	background-color: black;
+	color: white;
+}
+.weatherWord{
+	color: var(--main-bg);
+	font-size: 1.8rem;
+}	
+
+/* ********************** about page ************************************************************************* */
+
+.myPhoto{
+	width: 30rem;
+	height: auto;
+	border-radius: 100%;
+}
+.about-left-div{
+margin-top: 5rem;
+}
+.about-right-div{
+	margin-top: 5rem;
+}
+
+/* *********** Weather container ******************************************************************** */
+.searchFrom{
+	position: relative;
+}
+.searchText{
+	width: 100%;
+	background-color: rgba(20, 20, 20, 0.959);
+	color: #fff;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+}
+::placeholder{
+	color: rgba(219, 219, 219, 0.952);
+	padding: 0.3rem;
+	letter-spacing: 1px;
+}
+.searchBtn{
+	background-color:rgb(6, 153, 211);
+	color: #fff;
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	width: 5rem;
+	border-radius: 1.5rem;
+}
+.searchBtn:hover{
+	background-color: orange;
+	color: white;
+	
+}
+.searchBox .card{
+	border-radius: 0.6rem;
+	background-color: rgba(20, 20, 20, 0.959);
+	width: 25rem;height: 15rem;
+}
+.searchBox .card .card-body{
+	display: flex;
+	justify-content: space-between;
+	/* padding: 2rem 6rem 0 6rem; */
+}
+.outFont{
+	font-size: 5rem;
+}
+.mainWeatherContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cardText{
+	color: rgba(219, 219, 219, 0.952);
+	letter-spacing: 1px;
+}
+
+.inpCardHead{
+	width: 100%;
+	height: 2.3rem;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	background-color: rgba(15, 15, 15, 0.959);
+	border-radius: 0.6rem;
+	padding: 5px 0.7rem;
+}
+.min-max-temp{
+	display: flex;
+	margin-top: 2rem;
+	margin-left: 1.3rem;
+}
+/* ********* 404 page **************************** */
+.errorPage{
+	width: 25rem;
+	height: auto;
+	/* for center img -> margin:auto*/
+	margin: auto;
+}
+.goBackBtn{
+	background-color: orange;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 2px 2px gray;
+}
+.goBackBtn:hover{
+	background-color: green;
+	color: #fff;
+}
+/* *********** footer **************************** */
+.foot{
+	width: 100%;
+	margin-top: auto;
+}
+.foot-text{
+	margin: 0;
+	/* padding-top: 0.8rem; */
+	/* font-size: 1.4rem; */
+	line-height: 3rem;
+}
