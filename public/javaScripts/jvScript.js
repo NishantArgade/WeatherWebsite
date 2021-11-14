@@ -8,7 +8,10 @@ const display = async () => {
 	if (cityName == "") {
 		document.querySelector('.cardText').innerHTML = "Please enter city name before Search!";
 		document.querySelector('.weatherIcon').innerHTML = "";
-		document.querySelector('.min-max-temp').innerHTML = "";
+		document.querySelector('.city-country-name').innerHTML = "";
+		setTimeout(() => {
+			window.location.reload();
+		}, 1800);
 	} else {
 
 		try {
@@ -33,7 +36,10 @@ const display = async () => {
 		} catch {
 			document.querySelector('.cardText').innerHTML = "Please enter valid city name!";
 			document.querySelector('.weatherIcon').innerHTML = "";
-			document.querySelector('.min-max-temp').innerHTML = "";
+			document.querySelector('.city-country-name').innerHTML = "";
+			setTimeout(() => {
+				window.location.reload();
+			}, 1800);
 		}
 	}
 	document.querySelector('.searchText').value = "";
